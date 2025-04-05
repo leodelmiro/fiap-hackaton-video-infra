@@ -10,26 +10,26 @@ data "aws_vpc" "vpc" {
 
 data "aws_subnets" "subnets" {
   filter {
-    name   = "vpc-id"
+    name = "vpc-id"
     values = [data.aws_vpc.vpc.id]
   }
 }
 
 data "aws_subnet" "subnet" {
   for_each = toset(data.aws_subnets.subnets.ids)
-  id       = each.value
+  id = each.value
 }
 
 data "aws_instance" "ec2" {
   depends_on = [aws_eks_node_group.node-group]
 
   filter {
-    name   = "tag:eks:nodegroup-name"
+    name = "tag:eks:nodegroup-name"
     values = ["NG-${var.projectName}"]
   }
 
   filter {
-    name   = "instance-state-name"
+    name = "instance-state-name"
     values = ["running"]
   }
 }
@@ -38,6 +38,6 @@ data "aws_security_group" "sg-eks" {
   depends_on = [aws_eks_node_group.node-group]
 
   tags = {
-    "aws:eks:cluster-name" = "tech-fiap-app"
+    "aws:eks:cluster-name" = var.projectName
   }
 }
