@@ -15,7 +15,7 @@
 Aplicação se trata de um Projeto Fiap Tech Challenge (Hackathon) - Software Architecture, simulando um projeto de uma
 empresa que recebe videos e transforma em Imagens.
 
-Este repositório é referente a Infra do repositório (Centralizando a subida para AWS da aplicação).
+Este repositório é referente a Infra do repositório (Centralizando a infra da AWS da aplicação).
 
 ### Demais repositórios
 - https://github.com/leodelmiro/fiap-hackaton-video-usuario
