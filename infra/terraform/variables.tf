@@ -19,7 +19,7 @@ variable "accessConfig" {
 }
 
 variable "eksClusterVersion" {
-  default = "1.30"
+  default = "1.31"
 }
 
 variable "eksNodeMinSize" {
