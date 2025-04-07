@@ -43,7 +43,7 @@ Este repositório é referente a Infra do repositório (Centralizando a infra da
 - .github: Arquivos com as actions.
 - Desenhos: Arquivos relacionados aos desenhos do projeto.
 - Infra: Arquivos terraform para criação do banco de dados.
-    - terraform: Arquivos de criação do EKS e ECR.
+    - terraform: Arquivos de criação do EKS, SQS, ECR.
 
 ## Rodando o Projeto Local
 
