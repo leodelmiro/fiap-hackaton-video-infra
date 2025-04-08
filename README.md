@@ -34,8 +34,6 @@ Este repositório é referente a Infra do repositório (Centralizando a infra da
 
 ## Desenho Solução
 
-### Infra AWS
-
 ![Tech Challenge Hackathon Infra](./desenhos/arquitetura.png)
 
 ## Estrutura do Projeto
