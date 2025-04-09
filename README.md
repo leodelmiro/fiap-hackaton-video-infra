@@ -31,6 +31,8 @@ Este repositório é referente a Infra do repositório (Centralizando a infra da
 - Terraform
 - AWS
 - Kubernetes
+- SQS
+- SNS
 
 ## Desenho Solução
 
