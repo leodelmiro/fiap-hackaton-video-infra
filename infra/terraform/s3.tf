@@ -14,6 +14,10 @@ resource "aws_s3_bucket_public_access_block" "public-acess-videos" {
 resource "aws_s3_bucket_policy" "allow_public_zips" {
   bucket = aws_s3_bucket.video-ld.id
 
+  depends_on = [
+    aws_s3_bucket_public_access_block.public-acess-videos
+  ]
+
   policy = jsonencode({
     Version = "2012-10-17",
     Statement = [
